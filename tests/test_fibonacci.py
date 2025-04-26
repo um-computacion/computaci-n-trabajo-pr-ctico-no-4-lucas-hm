@@ -1,5 +1,5 @@
 import unittest
-from src.fibonacci import 
+from src.fibonacci import fibonacci_iterativo, fibonacci_recursivo
 #resolver fibonacci
 class test_fibonacci(unittest.TestCase):
     def fibonacci_recursivo(self):
