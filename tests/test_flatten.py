@@ -1,5 +1,5 @@
 import unittest
-from src.flatten import
+from src.flatten import list_flattener, SoloListasError
 #resolver ejercicio listas
 class TestAplanadorListas(unittest.TestCase):
     def test_lista_simple(self):
@@ -20,7 +20,7 @@ class TestAplanadorListas(unittest.TestCase):
         with self.assertRaises(SoloListasError):
             list_flattener([1, [2, (3, 4)], 5])
         with self.assertRaises(SoloListasError):
-            list_flattener([[1, 2], [{'a': 3}, 4]])
+            list_flattener([[1, 2],[{'a':3},4]])
 #fin listas
 
 if __name__ == "__main__":
